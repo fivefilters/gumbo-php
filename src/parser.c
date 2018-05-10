@@ -120,9 +120,9 @@ void gumbo_recursive_parse_base(xmlDocPtr doc, xmlNodePtr parent_node, GumboNode
 
         // TODO: Whitespace option
         case GUMBO_NODE_WHITESPACE:
-            if(forceWhitespaces) {
+            //if(forceWhitespaces) {
               xmlAddChild(parent_node, xmlNewText(BAD_CAST node->v.text.text));
-            }
+            //}
         break;
     }
 }
